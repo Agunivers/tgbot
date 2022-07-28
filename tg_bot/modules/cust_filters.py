@@ -15,15 +15,15 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from Yone import dispatcher, LOGGER, INSPECTOR
-from Yone.Plugins.disable import DisableAbleCommandHandler
-from Yone.Handlers.managers import MessageHandlerChecker
-from Yone.Handlers.validation import user_admin
-from Yone.Handlers.extraction import extract_text
-from Yone.Handlers.filters import CustomFilters
-from Yone.Handlers.misc import build_keyboard_parser
-from Yone.Handlers.msg_types import get_filter_type
-from Yone.Handlers.string_handling import (
+from tg_bot import dispatcher, LOGGER, INSPECTOR
+from tg_bot.Plugins.disable import DisableAbleCommandHandler
+from tg_bot.Handlers.managers import MessageHandlerChecker
+from tg_bot.Handlers.validation import user_admin
+from tg_bot.Handlers.extraction import extract_text
+from tg_bot.Handlers.filters import CustomFilters
+from tg_bot.Handlers.misc import build_keyboard_parser
+from tg_bot.Handlers.msg_types import get_filter_type
+from tg_bot.Handlers.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
