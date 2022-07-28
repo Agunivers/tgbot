@@ -29,11 +29,11 @@ from tg_bot.Handlers.string_handling import (
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from Yone.Database import cust_filters_sql as sql
+from tg_bot.Database import cust_filters_sql as sql
 
-from Yone.Plugins.Admin.connection import connected
+from tg_bot.Plugins.Admin.connection import connected
 
-from Yone.Handlers.alternate import send_message, typing_action
+from tg_bot.Handlers.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
